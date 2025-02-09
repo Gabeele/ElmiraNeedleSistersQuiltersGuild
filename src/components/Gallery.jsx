@@ -8,7 +8,7 @@ const Gallery = () => {
   // Generate quilt gallery items dynamically
   const quiltGalleryItems = Array.from({ length: 20 }, (_, index) => ({
     id: index + 1,
-    image: `./img/Quilt_${index + 1}.jpg`,
+    image: `/src/assets/img/Quilt_${index + 1}.jpg`,
     title: `Quilt #${index + 1}`,
     artist: 'Guild Member'
   }));

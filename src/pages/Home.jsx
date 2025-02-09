@@ -1,4 +1,5 @@
 import React from 'react';
+import sewerImage from '../assets/img/sewer.jpg';
 
 const Home = () => {
   const features = [
@@ -38,7 +39,7 @@ const Home = () => {
         <div className="container mx-auto max-w-6xl flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-12">
           <div className="w-full md:w-1/2 flex justify-center">
             <img
-              src="/src/assets/img/sewer.jpg"
+              src={sewerImage}
               alt="Quilter"
               className="rounded-lg object-cover w-full max-w-md shadow-2xl"
             />

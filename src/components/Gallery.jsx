@@ -6,12 +6,15 @@ const Gallery = () => {
   const [visibleItems, setVisibleItems] = useState(6);
 
   // Generate quilt gallery items dynamically
-  const quiltGalleryItems = Array.from({ length: 20 }, (_, index) => ({
-    id: index + 1,
-    image: `/src/assets/img/Quilt_${index + 1}.jpg`,
-    title: `Quilt #${index + 1}`,
-    artist: 'Guild Member'
-  }));
+  const quiltGalleryItems = Array.from({ length: 20 }, (_, index) => {
+    const imageNumber = index + 1;
+    return {
+      id: imageNumber,
+      image: new URL(`../assets/img/Quilt_${imageNumber}.jpg`, import.meta.url).href,
+      title: `Quilt #${imageNumber}`,
+      artist: 'Guild Member'
+    };
+  });
 
   const loadMore = () => {
     setVisibleItems(prev => prev + 6);

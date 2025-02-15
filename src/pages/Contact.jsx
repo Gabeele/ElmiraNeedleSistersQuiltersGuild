@@ -6,12 +6,12 @@ const Contact = () => {
     {
       name: "Anne Jenson",
       role: "Guild President",
-      email: "personA@example.com",
+      email: "anne.jenson@gmail.com",
     },
     {
       name: "Robin Bogaert",
       role: "Guild Secretary",
-      email: "personB@example.com",
+      email: "rlbogaert@gmail.com",
     },
   ];
 
